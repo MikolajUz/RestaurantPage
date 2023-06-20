@@ -1,13 +1,19 @@
 const menu = ()=>{
   
-    const title=document.createElement('h1');
+    
     const container=document.createElement('div');
     const main=document.querySelector('div.middle');
     container.classList.add('containerMenu')
 
-    title.textContent='Menu';
+    
     main.appendChild(container);
-    container.appendChild(title);
+   
+
+    const titler = (titleText) =>{
+        const title=document.createElement('h1');
+        container.appendChild(title);
+        title.textContent=titleText;
+    }
 
  
 
@@ -33,12 +39,18 @@ const menu = ()=>{
         containerD.appendChild(img);
 
     }
-
+    titler('Menu');
     dish('Tuna','Mmm very tasty, grilled.');
     dish('Cheese','The fatter, the better.');
     dish('Catnip','Only on weekends.');
     dish('Crisps','Base of healthy diet.');
 
-
+    return{titler,dish}
   }
-  export {menu};
+function test(){
+    console.log('DUPA');
+}
+ 
+
+  
+  export {menu,test};

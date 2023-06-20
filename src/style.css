@@ -30,6 +30,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+
 }
 ol, ul {
 	list-style: none;
@@ -67,7 +68,7 @@ table {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    
+    min-height: 100vh;
     overflow: auto;
 }  
 
@@ -88,9 +89,8 @@ table {
  background-image: url('./images/cat.png');
  background-size: 100px 100px;
  background-repeat: repeat;
- width: 100%;
- height: 100%;
  justify-content: center;
+ flex:1;
 }
 
 
@@ -130,7 +130,7 @@ h1{
 }
 .textDish{
     font-family: MyFont;
-    padding: 15px;
+    padding: 5px;
     font-size: 15px;
 }
 
@@ -138,7 +138,8 @@ h1{
     display: flex;
     flex-direction: column;
     gap: 5px;
-    padding: 10px 150px 20px 150px;
+    padding: 10px 10px 20px 10px;
+    width: 500px;
     background-color: rgb(194, 180, 180);
     border-radius: 10px;
     align-items: center;
