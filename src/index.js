@@ -60,6 +60,7 @@ const createInitial= (() => {
         }
        });
 
+       middle.childNodes.forEach(elem=>elem.remove());
        if(this.textContent==='Home')home();
        if(this.textContent==='Menu')menu();
        if(this.textContent==='Contact')contact();

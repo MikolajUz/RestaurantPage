@@ -1,4 +1,5 @@
 const home = ()=>{
-  console.log('hometab');
+  const middle=document.querySelector('div.middle');
+  
 }
 export {home};
