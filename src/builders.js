@@ -19,7 +19,7 @@ function item(name,...text){
         const container=document.createElement('div');
 
         
-        img.src = `../src/images/${name}.jpg`;
+        img.src = `./images/${name}.jpg`;
         
         img.classList.add('img');
         img.onerror = function(){this.style.display='none';};
