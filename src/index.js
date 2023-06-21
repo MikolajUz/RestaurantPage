@@ -22,7 +22,7 @@ const createInitial= (() => {
 
    
     footer.textContent='Made by MikolajUZ';
-    
+    home();
     const button1=document.createElement('div');
     button1.textContent='Home';
     button1.setAttribute('id','button1');
@@ -30,7 +30,7 @@ const createInitial= (() => {
 
     const button2=document.createElement('div');
     button2.setAttribute('id','button2');
-    button2.textContent='Menu';home
+    button2.textContent='Menu';
     header.appendChild(button2);
 
     const button3=document.createElement('div');
